@@ -164,6 +164,8 @@ main {
 }
 
 .saying {
+   width: 114.8px;
+   height: 48px;
    position: absolute;
    background-image: url(../images/select_bubble.png);
    background-repeat: no-repeat;
@@ -186,12 +188,18 @@ main {
    text-align: center;
    color: white;
    cursor: pointer;
+   z-index: 3;
 }
-
+/* 사이트처럼 말풍선 사진으로 대체
+추가적으로 누를 때 말풍선 이동
 .table_sub:nth-child(1) {
    background-color: white;
    color: rgb(4, 17, 59);
    border-radius: 10px;
+}
+*/
+.table_sub:nth-child(1) {
+   color: rgb(4, 17, 59);
 }
 
 .m_fir_search {
