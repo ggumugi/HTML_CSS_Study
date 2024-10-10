@@ -194,6 +194,22 @@ main {
    display: flex;
    justify-content: center;
 }
+.form-control {
+   border: none;
+   width: 90%;
+}
+
+.input-group-text {
+   width: 10%;
+   background-color: rgb(255, 115, 0);
+   cursor: pointer;
+   border: none;
+}
+
+.input-group-text > i {
+   margin: 0 auto;
+   font-size: 20px;
+}
 
 .input-group {
    margin-top: 30px;
@@ -314,7 +330,7 @@ main {
    font-weight: bold;
 }
 .footer__fir {
-   height: 370px;
+   height: 320px;
    text-align: center;
    font-size: 11px;
    margin-top: 50px;
