@@ -159,6 +159,16 @@ main {
 .m_fir_choice {
    display: flex;
    justify-content: center;
+   position: relative;
+   z-index: 1;
+}
+
+.saying {
+   position: absolute;
+   background-image: url(../images/select_bubble.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   z-index: 2;
 }
 
 .fir_choice_table {
@@ -175,6 +185,7 @@ main {
    width: 20%;
    text-align: center;
    color: white;
+   cursor: pointer;
 }
 
 .table_sub:nth-child(1) {
@@ -183,20 +194,20 @@ main {
    border-radius: 10px;
 }
 
-.tab-sub.sub1 {
-   background-color: white;
-   width: 20%;
-   text-align: center;
-   color: black;
-   border-radius: 8px;
-}
 .m_fir_search {
    display: flex;
    justify-content: center;
 }
+
 .form-control {
    border: none;
    width: 90%;
+}
+
+.form-control::placeholder {
+   color: rgba(121, 121, 121, 0.685);
+   letter-spacing: -1px;
+   padding-left: 10px;
 }
 
 .input-group-text {
@@ -217,8 +228,9 @@ main {
    height: 60px;
    display: flex;
 }
-.input-group::placeholder {
-   color: rgb(158, 158, 158);
+
+.input-group > input {
+   background-color: rgb(240, 240, 240);
 }
 
 .main__sec {
