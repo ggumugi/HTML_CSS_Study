@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>끝말잇기 게임</title>
+   </head>
+   <body>
+      <h1>끝말잇기 게임</h1>
+      <p>시작 단어: <span id="startWord">사과</span></p>
+      <input type="text" id="userInput" placeholder="다음 단어를 입력하세요" />
+      <button onclick="checkWord()">확인</button>
+      <p id="result"></p>
+
+      <script>
+         const startWord = document.getElementById('startWord').innerText
+         const result = document.getElementById('result')
+
+         function checkWord() {
+            const userInput = document.getElementById('userInput').value
+
+            if (userInput.charAt(0) === startWord.charAt(startWord.length - 1)) {
+               startWord = userInput
+               document.getElementById('startWord').innerText = startWord
+               result.innerText = '정답입니다! 다음 단어를 입력해주세요.'
+            } else {
+               result.innerText = '틀렸습니다. 다시 시도해보세요.'
+            }
+            document.getElementById('userInput').value = ''
+         }
+      </script>
+   </body>
+</html>

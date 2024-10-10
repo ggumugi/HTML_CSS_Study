@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action=".">
+      <label for="user_id">아이디</label>
+      <input type="text" id="user_id" name="user_id" />
+
+      <label for="user_pw">패스워드</label>
+      <input type="password" name="user_pw" id="user_pw" />
+      <!-- submit과 같은 역할을 하는 image -->
+      <input type="image" src="./images/login.png" alt="login" />
+      <input type="reset" value="취소" />
+      <button type="submit">로그인</button>
+      <button type="reset">취소</button>
+      <hr />
+      <!-- submit 이외의 다른 용도로 버튼을 사용할 때 쓴다 -->
+      <input
+        type="button"
+        value="공지보기"
+        onclick="window.open('./datetime.html')"
+      />
+      <button onclick="window.open('./datatime.html')">공지보기</button>
+      <!-- 사용가능 -->
+      <a href="https://www.naver.com">
+        <img src="./images/login.png" alt="로그인" />
+      </a>
+      <!-- 사용 x(문법에러) -->
+      <!-- 기능 동작은 하지만 문법적으로 사용할 수 없는 규칙에 포함된다 -->
+      <a href="https://www.naver.com">
+        <input type="button" value="네이버" />
+      </a>
+      <a href="https://www.naver.com">
+        <button>네이버</button>
+      </a>
+    </form>
+  </body>
+</html>

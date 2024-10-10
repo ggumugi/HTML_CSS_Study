@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         .parent {
+            position: relative;
+            top: 150px;
+            left: 100px;
+            width: 400px;
+            height: 200px;
+            background: royalblue;
+         }
+
+         .child1 {
+            /* absolute를 사용하면 무조건 부모 div의 위치를 기준으로 시작한다 
+            다른 div랑 겹치더라도 무조건 위치가 시작점에 고정된다 */
+            position: absolute;
+            top: 80px;
+            right: 150px;
+            width: 200px;
+            height: 100px;
+            background: salmon;
+         }
+
+         .child2 {
+            position: absolute;
+            top: 80px;
+            right: 100px;
+            width: 200px;
+            height: 100px;
+            background: yellowgreen;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="parent">
+         <div class="child1">1</div>
+         <div class="child2">2</div>
+      </div>
+   </body>
+</html>

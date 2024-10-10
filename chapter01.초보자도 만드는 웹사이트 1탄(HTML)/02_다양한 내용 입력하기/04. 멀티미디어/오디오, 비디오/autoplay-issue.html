@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- controls : 컨트롤러, loop : 반복, muted: 음소거 -->
+    <!-- autoplay : 자동재생(크롬에서는 안됨) muted를 쓰면 동영상은 자동재생 가능 -->
+    <audio src="spring.mp3" controls loop muted autoplay></audio>
+
+    <!-- height: 는 잘 사용하지 않는다.(동영상의 기본 비율이 있기 때문) -->
+    <!-- 동영상 썸네일 -->
+    <video
+      src="salad.mp4"
+      poster="salad.jpg"
+      controls
+      loop
+      autoplay
+      muted
+      width="50%"
+    ></video>
+  </body>
+</html>

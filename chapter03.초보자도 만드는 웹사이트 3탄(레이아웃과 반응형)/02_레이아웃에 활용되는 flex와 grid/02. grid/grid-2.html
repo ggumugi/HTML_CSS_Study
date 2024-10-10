@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         #wrapper {
+            display: grid;
+            width: 600px;
+            /* 너비 200px, 컬럼 3개 정해진 너비에서 비율을 나눈다 
+            1:1:1 따라서 너비 200px fr 단위는 grid에서 사용하는 비율 단위 */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* 한 행의 높이 100px */
+            /* 1fr을 3번 반복 */
+            grid-template-columns: repeat(3, 1fr);
+            /*
+            grid-template-rows: 100px;
+            */
+            /* 최소와 최대 사이즈 설정 */
+            grid-template-rows: minmax(100px, auto);
+         }
+         .items {
+            padding: 10px;
+            background-color: #eee;
+         }
+         /* odd : 홀수 even : 짝수 */
+         .items:nth-child(odd) {
+            background-color: #bbb;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="wrapper">
+         <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+         <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+         <div class="items">Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+         <div class="items">Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+         <div class="items">Lorem, ipsum dolor.</div>
+      </div>
+   </body>
+</html>

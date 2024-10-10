@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* 초기화 설정 */
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 0.9em;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: black;
+   text-decoration: none;
+}
+
+p {
+   margin: 0;
+}
+
+/* 고정형 레이아웃 */
+.wrap {
+   min-width: 1200px;
+   overflow: hidden;
+}
+
+/* 헤더 */
+
+header {
+   position: relative;
+   height: 85px;
+}
+
+nav {
+   position: fixed;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid rgb(193, 193, 193);
+   background-color: white;
+   width: 100%; /* 직방은 메뉴의 width가 100% */
+   z-index: 999;
+}
+
+.nav__menu > li {
+   /* 하위 메뉴 만들기 위해 적용 */
+   position: relative;
+   top: 0;
+
+   /* 수평 정렬 */
+   display: inline-block;
+   padding: 20px;
+}
+
+.nav .login {
+   font-size: 11px;
+   background-color: rgb(232, 232, 232);
+   border: 1px solid rgb(202, 202, 202);
+   border-radius: 5px;
+   color: black;
+   width: 120px;
+   height: 30px;
+   margin-right: 20px;
+   line-height: 1;
+}
+
+.nav .login:hover {
+   background-color: rgb(202, 202, 202);
+}
+
+.nav .right-menu__btn {
+   /*
+    실제 사이트에서 사진으로 적용 시켜두어서 사진 삽입 후 주석처리
+   width: 113px;
+   justify-content: center;
+   text-align: right;
+   font-size: 14px;
+   font-weight: bold;
+   */
+   padding: 23px 20px 23px 20px;
+}
+
+nav .right-menu__btn:hover {
+   background-color: rgb(202, 202, 202);
+}
+
+nav .right-menu__btn > a {
+   color: rgb(0, 73, 0) !important;
+}
+
+/* 본메뉴 */
+
+.w1 {
+   display: block;
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.w2 {
+   display: block;
+   font-size: 13px;
+}
+
+/* 하위메뉴 */
+
+.sub-menu {
+   display: none; /* 화면에서 안보임 */
+   width: 200px;
+   background-color: white;
+
+   /* 하위 메뉴 만들기 위해 absolute 적용 (li태그를 기준으로 위치를 잡는다) */
+   position: absolute;
+   top: 85px;
+   border: 1px solid rgb(193, 193, 193);
+}
+
+.nav__menu li:hover .w1,
+.nav__menu li:hover .w2 {
+   color: rgb(255, 115, 0);
+}
+.nav__menu li:hover .sub-menu {
+   display: block; /* hover 이벤트 발생 시 보임 */
+}
+
+.sub-menu > li {
+   padding: 10px;
+}
+
+main {
+   height: 1010px;
+}
+
+.main__fir {
+   height: 460px;
+   background-image: url(../images/bg.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+.m_fir_title {
+   width: 100%;
+   height: 260px;
+   color: white;
+   font-weight: bold;
+   font-size: 40px;
+   letter-spacing: -3px;
+   text-align: center;
+   justify-content: center;
+   display: flex;
+   align-items: end;
+   padding-bottom: 50px;
+}
+
+.m_fir_choice {
+   display: flex;
+   justify-content: center;
+}
+
+.fir_choice_table {
+   width: 574px;
+   height: 40px;
+   line-height: 40px;
+   display: flex;
+   background-color: rgba(4, 17, 59, 0.8);
+   font-weight: 900;
+   border-radius: 10px;
+}
+
+.table_sub {
+   width: 20%;
+   text-align: center;
+   color: white;
+}
+
+.table_sub:nth-child(1) {
+   background-color: white;
+   color: rgb(4, 17, 59);
+   border-radius: 10px;
+}
+
+.tab-sub.sub1 {
+   background-color: white;
+   width: 20%;
+   text-align: center;
+   color: black;
+   border-radius: 8px;
+}
+.m_fir_search {
+   display: flex;
+   justify-content: center;
+}
+
+.input-group {
+   margin-top: 30px;
+   width: 574px;
+   height: 60px;
+   display: flex;
+}
+.input-group::placeholder {
+   color: rgb(158, 158, 158);
+}
+
+.main__sec {
+   height: 270px;
+   padding: 40px 0 30px;
+   display: flex;
+   justify-content: center;
+}
+.m_s_s {
+   width: 280px;
+   height: 270px;
+   margin: 0 20px;
+}
+.m_s_title {
+   display: flex;
+   width: 280px;
+   border-bottom: 1px solid rgb(219, 219, 219);
+}
+.m_s_title > h5 {
+   width: 80%;
+   font-weight: bold;
+}
+
+.m_sec_itro > div:nth-child(2) {
+   width: 280px;
+   height: 140px;
+   background-image: url(../images/banner1.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   margin-top: 20px;
+}
+
+.m_s_s button {
+   width: 20%;
+   border: none;
+   color: rgb(116, 116, 116);
+   font-size: 12px;
+   border-radius: 5px;
+   align-items: end;
+   margin-bottom: 5px;
+}
+
+.m_sec_news > div:nth-child(2) ul {
+   width: 280px;
+   height: 150px;
+   margin-top: 20px;
+}
+.m_sec_news > div:nth-child(2) ul li {
+   width: 280px;
+   margin-bottom: 10px;
+}
+.alink {
+   width: 280px;
+   font-size: 13px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+.m_sec_info > div:nth-child(2) ul {
+   width: 280px;
+   height: 150px;
+   margin-top: 20px;
+}
+.m_sec_info > div:nth-child(2) ul li {
+   width: 280px;
+   margin-bottom: 10px;
+}
+.main__thir {
+   height: 280px;
+   background-color: rgba(243, 245, 245, 1);
+}
+.main__thir > div {
+   width: 890px;
+   height: 280px;
+   background-image: url(../images/phone.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: 90px;
+   margin: 0 auto;
+}
+
+.ment {
+   display: block;
+   height: 140px;
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+}
+.ment > p {
+   padding-top: 100px;
+}
+
+.thir_button {
+   display: flex;
+   height: 140px;
+   justify-content: center;
+   margin-top: 20px;
+   margin-left: 175px;
+   font-size: 22px;
+}
+.thir_button button {
+   padding: 8px 15px;
+   margin: 0 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: rgba(189, 187, 202, 0.288);
+   font-weight: bold;
+}
+.footer__fir {
+   height: 370px;
+   text-align: center;
+   font-size: 11px;
+   margin-top: 50px;
+}
+.sns_wrap {
+   display: flex;
+   justify-content: center;
+}
+.sns {
+   width: 40px;
+   height: 40px;
+   border: 1px solid grey;
+   font-size: 15px;
+   flex-direction: column;
+   margin: 0 5px;
+}

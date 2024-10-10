@@ -1,0 +1,65 @@
+#container {
+   width: 1300px;
+   margin: 20px auto;
+}
+ul {
+   list-style: none;
+   padding: 0;
+}
+h1 {
+   text-align: center;
+   padding-bottom: 100px;
+}
+.wrap img {
+   width: 300px;
+   height: 300px;
+   margin: 0;
+   padding: 0;
+   float: left;
+   z-index: 1;
+}
+
+.wrap li {
+   float: left;
+   padding: 0;
+   margin: 10px;
+   overflow: hidden;
+   position: relative;
+   z-index: 2;
+}
+
+.wrap .song {
+   position: absolute;
+   top: 300px;
+   width: 300px;
+   height: 300px;
+   padding-top: 20px;
+   background-color: rgba(37, 37, 37, 0.6);
+   opacity: 0;
+   color: #fff;
+   text-align: center;
+}
+.wrap li:hover .song {
+   transition: all 1s ease-in;
+   opacity: 1;
+   transform: translateY(-300px);
+}
+.wrap li:not(:hover) .song {
+   opacity: 0;
+   transform: translateY(300px);
+   transition: all 1s ease-in;
+}
+.wrap .name {
+   position: absolute;
+   width: 300px;
+   height: 300px;
+   text-align: center;
+   font-size: 30px;
+   margin-top: 200px;
+   color: white;
+   transition: all 1s ease-in;
+}
+.wrap li:hover .name {
+   opacity: 0;
+   transform: translateY(-300px);
+}

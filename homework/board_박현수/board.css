@@ -1,0 +1,107 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 10px;
+}
+
+ul,
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+.wrap {
+   width: 1400px;
+   margin: 0 auto;
+}
+table {
+   width: 100%;
+   border-top: 2px solid rgb(99, 99, 99);
+   font-size: 1.5rem;
+   border-collapse: collapse;
+}
+table caption {
+   font-size: 1.8rem;
+   padding: 30px 30px 80px;
+}
+table thead {
+   background-color: rgb(235, 235, 235);
+}
+table th,
+td {
+   padding: 15px;
+   border-bottom: 1px solid rgb(175, 175, 175);
+   text-align: center;
+}
+.title {
+   text-align: left;
+}
+
+table tbody tr:hover {
+   background-color: rgb(240, 245, 255);
+}
+
+.title > a:hover {
+   text-decoration: underline;
+   color: rgb(26, 0, 141);
+}
+
+.bt {
+   font-size: 1.5rem;
+   margin-top: 50px;
+   margin-right: 40px;
+   text-align: right;
+}
+.bt a {
+   display: inline-block;
+   width: 80px;
+   height: 40px;
+   padding: 10px;
+   border: 1px solid gray;
+   line-height: 40px;
+   border-radius: 2px;
+   text-align: center;
+}
+.bt a:hover {
+   text-decoration: underline;
+}
+.page {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.page a {
+   text-align: center;
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   box-sizing: border-box;
+   line-height: 40px;
+   margin: 0 2px;
+}
+
+.page a.bt {
+   font-size: 2rem;
+}
+
+.page a.num {
+   font-size: 1.9rem;
+}
+.page > a:hover {
+   text-decoration: underline;
+}
+.page a.num.on {
+   color: #fff;
+   background-color: #868686;
+}
+.page a.bt {
+   border: 1px solid gray;
+}

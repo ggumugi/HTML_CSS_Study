@@ -1,0 +1,18 @@
+table,
+th,
+td {
+   border: 1px solid #c0c0c0;
+   border-collapse: collapse;
+}
+th,
+td {
+   padding: 10px 20px;
+}
+
+#container {
+   width: 600px;
+   border: 1px solid black;
+   margin: 0 auto;
+   /* 가독성을 위해 padding을 넣어도 된다 */
+   /* padding: 0 20px 20px; */
+}

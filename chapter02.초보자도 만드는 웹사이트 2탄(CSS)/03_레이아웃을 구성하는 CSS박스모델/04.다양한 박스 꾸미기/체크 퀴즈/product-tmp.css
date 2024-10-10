@@ -1,0 +1,40 @@
+table,
+th,
+td {
+   border: 1px solid #c0c0c0;
+   border-collapse: collapse;
+}
+th,
+td {
+   padding: 10px 20px;
+}
+
+#description {
+   width: 550px;
+   border: 1px dotted black;
+   margin: 0 auto;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   padding: 20px;
+   margin-top: 30px;
+   /* 가독성을 위해 padding을 넣어도 된다 */
+   /* padding: 0 20px 20px; */
+}
+
+#receipe {
+   width: 550px;
+   border: 1px dotted black;
+   margin: 0 auto;
+   padding: 20px;
+   margin-top: 30px;
+}
+
+#package {
+   width: 550px;
+   border: 1px dotted black;
+   margin: 0 auto;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   padding: 20px;
+   margin-top: 30px;
+}

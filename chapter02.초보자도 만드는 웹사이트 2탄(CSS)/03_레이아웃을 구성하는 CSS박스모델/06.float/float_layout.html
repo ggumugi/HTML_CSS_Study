@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         body {
+            margin: 0 auto;
+            width: 960px;
+         }
+         #aside {
+            /* 전체 body의 width가 960px 이므로 aside + section의 너비를 더한 값이 960px를 넘으면 안됨 */
+            width: 200px;
+            /* height에 %를 적용할 때는 height를 감싸고 있는 부모태그의 높이가 있어야 한다 */
+            height: 100%;
+            float: right;
+         }
+         .section {
+            height: 200px;
+            width: 760px;
+            float: left;
+         }
+         #wrap {
+            height: 600px;
+            /* 자료가 주어진 div의 크기를 넘어가면 어떻게 처리할지에 대한 코드 */
+            overflow: hidden;
+         }
+         #footer {
+            clear: both;
+         }
+         /*
+         #section1 {
+         }
+         #section2 {
+         }
+         #section3 {
+         }
+         */
+      </style>
+   </head>
+   <body>
+      <div id="header" style="background-color: aqua; height: 100px">Header</div>
+      <div id="navigation" style="background-color: beige; height: 30px">Navigation</div>
+      <div id="wrap">
+         <div id="aside" style="background-color: cadetblue">
+            Aside
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, doloremque, corporis perferendis dolores ratione enim nobis quasi sunt ab quod, sint maxime? Possimus vel soluta veniam qui saepe earum at!</p>
+         </div>
+         <div id="section1" class="section" style="background-color: coral">
+            Section1
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis non fugiat eius maiores aliquid cupiditate vel dignissimos exercitationem est facere, voluptas iure, error similique nisi pariatur, culpa at. Nihil, tempora.</p>
+         </div>
+         <div id="section2" class="section" style="background-color: blue">
+            Section2
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores cum nobis impedit voluptatem optio corrupti alias sunt modi, at voluptate aliquid similique vitae nihil exercitationem. Sapiente, perspiciatis mollitia? Maxime, quo.</p>
+         </div>
+         <div id="section3" class="section" style="background-color: blueviolet">
+            Section3
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, perspiciatis debitis. Atque commodi numquam veniam est fugiat aliquid, libero, doloribus voluptatem ea perspiciatis earum voluptate non magnam ratione provident voluptatibus.</p>
+         </div>
+      </div>
+      <div id="footer" style="background-color: blanchedalmond; height: 150px">Footer</div>
+   </body>
+</html>
