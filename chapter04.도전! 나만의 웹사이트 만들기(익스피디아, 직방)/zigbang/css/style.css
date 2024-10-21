@@ -52,6 +52,8 @@ nav {
    /* 수평 정렬 */
    display: inline-block;
    padding: 20px;
+   background-color: white;
+   z-index: 2;
 }
 
 .nav .login {
@@ -64,6 +66,7 @@ nav {
    height: 30px;
    margin-right: 20px;
    line-height: 1;
+   z-index: 1;
 }
 
 .nav .login:hover {
@@ -376,3 +379,16 @@ main {
    font-size: 12px;
    letter-spacing: -0.5px;
 }
+/*
+@media all and(max-width:1300px) {
+   .nav {
+      width: 1300px;
+   }
+   .nav .right-menu {
+      width: 310px;
+   }
+   .nav__menu {
+      width: 900px;
+   }
+}
+*/
